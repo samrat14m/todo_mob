@@ -1,0 +1,249 @@
+.main-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center;
+}
+.head{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 70%;
+    height: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    color: rgb(100, 100, 100);
+    letter-spacing: 0.3rem;
+}
+
+.head-task{
+    font-size: 3.2rem;    
+}
+.task{
+    font-weight: 700;
+    color: black;
+}
+.head-add-task{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin:0px 20px;
+}
+.material-icons{
+    font-size: 30px;
+    color:orangered;
+}
+.add{
+    font-size: 1.6rem;
+}
+.container{
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: none;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    height: 350px;
+    width: 250px;
+    border: 1.8px solid orangered;
+    border-radius: 10px;
+    margin:0px 30px 10px 30px;
+    box-shadow: 10px 10px 20px gray;
+}
+
+.hidden{
+    display: none;
+}
+.strike{
+    text-decoration:line-through;
+    font-size: 1.3em;
+    text-align: end;
+    padding:20px;
+    color: orangered;
+    font-family:Arial, Helvetica, sans-serif;
+}
+hr{
+ 
+    width: 85%;
+    position: relative;
+    left:19px;
+    border: 0.7px solid rgb(0, 2, 70);
+}
+.task-head{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.8em;
+    padding:40px 0px 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: orangered;
+    font-weight: 300;
+}
+.pending{
+ display: inline;
+ color: black;
+ padding-left: 10px;
+ font-size: 1.2em;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.link-paris{
+    text-decoration: none; 
+    color: orangered; 
+    letter-spacing: 3px;
+}
+
+/* trip tp paris page */
+
+.ttp-head{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 3rem;
+    color: black;
+    width: auto;
+    margin: 10px;
+}
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(100, 100, 100);
+    letter-spacing: 3px;
+    padding: 10px;
+}
+.ttp-box{
+    width: 320px;
+    height:360px;
+    margin: auto;
+
+}
+.ttp-task-head{
+    font-size: 1.8rem ;
+    font-weight:300;
+    letter-spacing: 3px;
+}
+.ttp-box-container{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.ttp-strike{
+    font-size: 1.3rem ;
+    text-align:end;
+    padding:20px 50px 0px 0px;
+}
+.ttp-pending{
+    height:125px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.ttp-add{
+    text-align: end;
+    font-size: 1.5rem;
+    padding:15px;
+}
+.main-header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.line{    
+    width:200px;
+    position: relative;
+    left:-20px;
+    top: 35px;
+}
+
+/* blurring pages */
+.blurred{
+    filter:blur(4px);
+}
+.on-top{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    width:430px;
+    background-color: white;
+    border: 1.8px solid orangered;
+    border-radius: 10px;
+    margin:0px 30px 10px 30px;
+    box-shadow: 10px 10px 20px gray;
+    z-index: +2px;
+    position: relative;
+    top:-375px;
+    left:375px;
+}
+.new{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+    color: orangered;
+    font-weight: 400;
+    padding: 20px 0px;
+}
+.input{
+    border: 1.5px solid orangered;
+    border-radius: 5px;
+    height: 40px;
+    width: 320px;
+}
+.button-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid orangered;
+    border-radius: 20px;
+    background-color: orangered;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    height: 2rem;
+    width:5rem;
+}
+
+/* media query for width-390px I-phone-12 Pro */
+
+@media (max-width:420px){
+    .head-task{font-size: 200%; letter-spacing: 0.75px;}
+    .head-add-task{ display:flex;margin:none; position: relative; left:15%;}
+    .box{height:2%; width:85%; margin: 1%; padding: none;}
+    .strike ,.check, .pending,hr, .add{display: none;}
+    .hidden{display: block; }
+    .task-head{font-size: 130%; color: rgb(0, 2, 70);padding:5% 10% 2%;text-align: start; font-weight: 400;letter-spacing: 1.5px;}
+    .link-paris{color:rgb(0, 2, 70); letter-spacing: 1.5px; font-size: 120%;}
+    
+    /* Pop up box on click add itmes */
+    .on-top{
+        height: 45%; 
+        width: 70%;
+        position: relative;
+        top:-350px;
+        left:22px;
+    }
+    .new{color: rgb(0, 2, 70); font-size: 1.35rem;}
+    .input{height: 10%;width:100%;}
+    .button{height: 1.5rem; width:3rem;font-size: 0.8rem;margin-bottom: 5%;}
+
+    /* Trip tp Paris */
+    .ttp-box{width: 62.5%; height:auto;}
+    .line{display: block; position: relative; top:-1px; width: 80%;}
+    .ttp-box-container{display: flex;}
+    .ttp-pending{display:block;font-size: 1rem; height:15%; margin:5% 0 35% 0;}
+    .ttp-strike{display: block; font-size: 1rem;height:3%;}
+    .ttp-main-header{display: block;}
+    .ttp-head{font-size: 2.1rem; letter-spacing: 1px;}
+    .ttp-back{display: none;}
+    .ttp-back-head{display: flex; flex-direction: row-reverse; margin:8% 3%;}
+    .ttp-task-head{color: orangered;font-size: 1.6rem;letter-spacing: 1px; margin-left:10%;}
+    .ttp-on-top{position: relative; top:-275px; left:25px;}
+}
